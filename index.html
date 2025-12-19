@@ -1,152 +1,80 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Maaz Ullah - Legal Services</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navigation -->
-    <nav class="bg-blue-900 text-white p-4 sticky top-0 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Advocate Maaz Ullah</h1>
-            <div class="space-x-4">
-                <a href="#home" class="hover:text-blue-300">Home</a>
-                <a href="#about" class="hover:text-blue-300">About</a>
-                <a href="#services" class="hover:text-blue-300">Services</a>
-                <a href="#contact" class="hover:text-blue-300">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <title>Advocate Maaz Ullah | Lucknow</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        :root { --navy: #0d1b2a; --gold: #c5a059; --white: #ffffff; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--white); scroll-behavior: smooth; }
+        
+        /* Navigation */
+        nav { background: var(--navy); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 84%; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold); }
+        .logo-img { height: 50px; width: auto; } /* Aapka logo yahan fit hoga */
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-blue-800 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">Expert Legal Solutions</h2>
-            <p class="text-lg mb-6">Providing trusted legal advice and representation for all your needs.</p>
-            <a href="#contact" class="bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600">Get in Touch</a>
-        </div>
-    </section>
+        /* Hero */
+        .hero { height: 80vh; background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); }
+        .hero h1 { font-size: 3.5rem; color: var(--gold); margin: 0; }
+        
+        /* Services */
+        .services { padding: 80px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        .card { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; }
+        .card:hover { border-color: var(--gold); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card i { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
 
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">About Advocate Maaz Ullah</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <!-- Local image path for when you host locally -->
-                <img src="advocate-photo.jpg" alt="Advocate Maaz Ullah" class="w-64 h-64 rounded-full mb-6 md:mb-0 md:mr-8" onerror="this.src='https://via.placeholder.com/300';">
-                <div>
-                    <p class="text-lg mb-4">With 2 years of experience in the legal field, Advocate Maaz Ullah specializes in civil, criminal, and corporate law. Known for his dedication and client-focused approach, he has successfully represented clients in various cases.</p>
-                    <p class="text-lg">Based in Lucknow, Maaz Ullah is committed to providing personalized legal solutions tailored to your needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-gray-200 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Our Legal Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Civil Law</h3>
-                    <p>Expert representation in property disputes, family matters, and contract issues.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Criminal Law</h3>
-                    <p>Defending clients in criminal cases with a strategic and thorough approach.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Corporate Law</h3>
-                    <p>Advising businesses on compliance, contracts, and corporate governance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-            <div class="max-w-lg mx-auto">
-                <div class="mb-4">
-                    <p class="text-lg"><strong>Email:</strong> ullahmaaz018@gmail.com</p>
-                    <p class="text-lg"><strong>Phone:</strong> +91 8808312042</p>
-                    <p class="text-lg"><strong>Address:</strong> New Madeh Ganj, Khadra, Lucknow, India</p>
-                </div>
-                <div class="mt-6">
-                    <h3 class="text-xl font-semibold mb-4">Send a Message</h3>
-                    <div class="space-y-4">
-                        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" id="name">
-                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" id="email">
-                        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg" rows="5" id="message"></textarea>
-                        <button onclick="sendMessage()" class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white text-center p-4">
-        <p>© 2025 Advocate Maaz Ullah. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function sendMessage() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            if (name && email && message) {
-                alert('Message sent successfully! We will get back to you soon.');
-                document.getElementById('name').value = '';
-                document.getElementById('email').value = '';
-                document.getElementById('message').value = '';
-            } else {
-                alert('Please fill out all fields.');
-            }
+        /* Contact Section */
+        .contact-container { background: #f9f9f9; padding: 60px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .whatsapp-btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
+        
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+            nav { width: 92%; padding: 10px 4%; }
         }
-    </script>
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="logo.png" alt="Advocate Maaz Ullah Logo" class="logo-img">
+    <div style="color: var(--gold); font-weight: bold;">LUCKNOW</div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Advocate Maaz Ullah</h1>
+        <p style="font-size: 1.2rem;">Expert Legal Counsel | 3+ Years of Experience</p>
+        <a href="https://wa.me/918808312042" class="whatsapp-btn">Get Legal Advice</a>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Legal Expertise</h2>
+    <div class="grid">
+        <div class="card"><i class="fas fa-balance-scale"></i><h3>Criminal Law</h3><p>Bail & Defense</p></div>
+        <div class="card"><i class="fas fa-gavel"></i><h3>Civil Law</h3><p>Property & Suits</p></div>
+        <div class="card"><i class="fas fa-users"></i><h3>Family Law</h3><p>Matrimonial Cases</p></div>
+        <div class="card"><i class="fas fa-briefcase"></i><h3>Corporate Law</h3><p>Legal Compliance</p></div>
+    </div>
+</section>
+
+<section class="contact-container">
+    <div>
+        <h2>Contact Details</h2>
+        <p><strong>Address:</strong> New Madeh Ganj, Khadra, Lucknow</p>
+        <p><strong>Phone:</strong> +91 8808312042</p>
+        <p><strong>Email:</strong> ullahmaaz018@gmail.com</p>
+        <a href="https://wa.me/918808312042" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+    <div style="height: 300px; overflow: hidden; border-radius: 10px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d3558.508828943717!2d80.9304!3d26.8837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0000000000%3A0x0!2sKhadra%2C%20Lucknow!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer style="background: var(--navy); color: white; text-align: center; padding: 20px;">
+    <p>© 2025 Advocate Maaz Ullah | Lucknow, Uttar Pradesh</p>
+</footer>
+
 </body>
 </html>
