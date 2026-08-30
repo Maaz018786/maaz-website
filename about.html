@@ -6,160 +6,978 @@
 
 <title>About Advocate Maaz Ullah | Lucknow</title>
 
+<meta name="description"
+content="About Advocate Maaz Ullah, practicing at Allahabad High Court Lucknow Bench and Lucknow District Courts.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:#f7f7f7;
-  color:#222;
-  line-height:1.7;
+    font-family:"Inter",Arial,sans-serif;
+    background:#f7f5f0;
+    color:#333;
+    line-height:1.7;
 }
+
+/* NAVBAR */
 
 nav{
-  background:#0d1b2a;
-  padding:18px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+    height:86px;
+    padding:0 7%;
+    background:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    border-bottom:1px solid #ddd6c8;
+    position:relative;
+    z-index:10;
 }
 
-nav .logo{
-  color:#fff;
-  font-size:22px;
-  font-weight:bold;
+.logo{
+    text-decoration:none;
 }
 
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:25px;
+.logo-name{
+    display:block;
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#172333;
+    font-size:27px;
+    line-height:1;
 }
 
-.container{
-  max-width:1000px;
-  margin:60px auto;
-  padding:0 25px;
+.logo-title{
+    display:block;
+    color:#b48a3c;
+    font-size:10px;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-top:8px;
 }
 
-.card{
-  background:white;
-  padding:40px;
-  border-radius:10px;
-  box-shadow:0 4px 18px rgba(0,0,0,.08);
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
 }
 
-h1{
-  color:#0d1b2a;
-  margin-bottom:10px;
+.nav-links a{
+    text-decoration:none;
+    color:#172333;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
 }
 
-h2{
-  color:#0d1b2a;
-  margin-top:30px;
-  margin-bottom:12px;
+.nav-links a:hover,
+.nav-links .active{
+    color:#b48a3c;
 }
 
-.gold{
-  color:#c5a059;
-  font-weight:bold;
+/* HERO */
+
+.hero{
+    min-height:470px;
+    padding:80px 7%;
+
+    display:flex;
+    align-items:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(10,20,32,.95),
+        rgba(10,20,32,.78),
+        rgba(10,20,32,.65)
+    ),
+    url("supreme%20court.webp");
+
+    background-size:cover;
+    background-position:center;
 }
 
-ul{
-  padding-left:25px;
+.hero-content{
+    max-width:850px;
 }
 
-footer{
-  text-align:center;
-  background:#0d1b2a;
-  color:white;
-  padding:25px;
-  margin-top:50px;
+.kicker{
+    color:#d3a854;
+    font-size:12px;
+    letter-spacing:5px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:clamp(50px,7vw,78px);
+    font-weight:400;
+    line-height:1.05;
+    margin-bottom:22px;
+}
+
+.hero p{
+    max-width:760px;
+    color:#e1e5e9;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* PROFILE */
+
+.profile{
+    padding:90px 7%;
+    background:#f7f5f0;
+}
+
+.profile-grid{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:70px;
+    align-items:center;
+}
+
+.profile-box{
+    background:#172333;
+    color:white;
+    min-height:390px;
+
+    padding:45px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    border-left:5px solid #c29a4b;
+}
+
+.profile-box .initial{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:90px;
+    color:#d3a854;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.profile-box h3{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:31px;
+    font-weight:400;
+    margin-bottom:8px;
+}
+
+.profile-box p{
+    color:#cbd2d9;
+    font-size:14px;
+}
+
+.profile-content .kicker{
+    display:block;
+    margin-bottom:12px;
+}
+
+.profile-content h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#172333;
+    font-size:46px;
+    font-weight:400;
+    line-height:1.15;
+    margin-bottom:22px;
+}
+
+.profile-content p{
+    color:#555;
+    margin-bottom:18px;
+    font-size:16px;
+}
+
+/* HIGHLIGHTS */
+
+.highlights{
+    padding:90px 7%;
+    background:#fff;
+}
+
+.section-heading{
+    max-width:700px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+
+.section-heading .kicker{
+    color:#b48a3c;
+}
+
+.section-heading h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#172333;
+    font-size:46px;
+    font-weight:400;
+    margin:10px 0 12px;
+}
+
+.section-heading p{
+    color:#666;
+}
+
+.highlight-grid{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.highlight{
+    padding:32px 27px;
+    background:#f7f5f0;
+    border:1px solid #e5dfd4;
+    transition:.3s;
+}
+
+.highlight:hover{
+    transform:translateY(-6px);
+    border-color:#c29a4b;
+}
+
+.highlight-icon{
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #c29a4b;
+    color:#b48a3c;
+
+    margin-bottom:22px;
+}
+
+.highlight h3{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#172333;
+    font-size:25px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+.highlight p{
+    color:#666;
+    font-size:14px;
+}
+
+/* PRACTICE */
+
+.practice{
+    padding:90px 7%;
+    background:#172333;
+    color:white;
+}
+
+.practice-inner{
+    max-width:1150px;
+    margin:auto;
+}
+
+.practice .section-heading{
+    margin-bottom:45px;
+}
+
+.practice .section-heading h2{
+    color:white;
+}
+
+.practice .section-heading p{
+    color:#cbd2d9;
+}
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.practice-item{
+    padding:23px 25px;
+    border:1px solid rgba(211,168,84,.35);
+    background:rgba(255,255,255,.035);
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    transition:.3s;
+}
+
+.practice-item:hover{
+    border-color:#d3a854;
+    transform:translateX(5px);
+}
+
+.practice-number{
+    color:#d3a854;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.practice-item strong{
+    font-size:15px;
+}
+
+/* APPROACH */
+
+.approach{
+    padding:90px 7%;
+    background:#f7f5f0;
+}
+
+.approach-grid{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.approach h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#172333;
+    font-size:45px;
+    font-weight:400;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.approach p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+.approach-list{
+    list-style:none;
+    margin-top:25px;
+}
+
+.approach-list li{
+    margin:15px 0;
+    color:#273548;
+    font-weight:600;
+}
+
+.approach-list i{
+    color:#b48a3c;
+    margin-right:10px;
+}
+
+.approach-card{
+    background:#172333;
+    color:white;
+    padding:45px;
+    border-top:4px solid #c29a4b;
+}
+
+.approach-card h3{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:18px;
+}
+
+.approach-card p{
+    color:#d0d6dc;
+}
+
+/* CTA */
+
+.cta{
+    padding:85px 7%;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(10,20,32,.93),
+        rgba(10,20,32,.93)
+    ),
+    url("supreme%20court.webp");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.cta h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:48px;
+    font-weight:400;
+    margin-bottom:12px;
+}
+
+.cta p{
+    color:#d2d8de;
+    margin-bottom:25px;
 }
 
 .btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:12px 22px;
-  background:#c5a059;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+
+    padding:14px 25px;
+
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+
+    margin:5px;
+    transition:.3s;
 }
+
+.btn-gold{
+    background:#c29a4b;
+    color:white;
+}
+
+.btn-gold:hover{
+    background:#d4ae64;
+}
+
+.btn-outline{
+    border:1px solid #d3a854;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#172333;
+}
+
+/* FOOTER */
+
+footer{
+    padding:28px 20px;
+    background:#09131f;
+    color:#9ca5ae;
+    text-align:center;
+    font-size:13px;
+}
+
+footer strong{
+    color:#d3a854;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    nav{
+        height:auto;
+        min-height:80px;
+        padding:15px 5%;
+        gap:15px;
+    }
+
+    .nav-links{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .profile-grid,
+    .approach-grid{
+        grid-template-columns:1fr;
+    }
+
+    .highlight-grid{
+        grid-template-columns:1fr;
+    }
+
+    .practice-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        gap:12px 18px;
+        font-size:12px;
+    }
+
+    .hero{
+        min-height:420px;
+        padding:65px 6%;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .profile,
+    .highlights,
+    .practice,
+    .approach{
+        padding:65px 6%;
+    }
+
+    .profile-content h2,
+    .section-heading h2,
+    .approach h2{
+        font-size:36px;
+    }
+
+    .cta{
+        padding:65px 6%;
+    }
+
+    .cta h2{
+        font-size:37px;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="logo">Advocate Maaz Ullah</div>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html" class="logo">
+        <span class="logo-name">Maaz Ullah</span>
+        <span class="logo-title">ADVOCATE</span>
+    </a>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="about.html" class="active">About</a>
+        </li>
+
+        <li>
+            <a href="services.html">Services</a>
+        </li>
+
+        <li>
+            <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
 </nav>
 
-<div class="container">
 
-<div class="card">
+<!-- HERO -->
 
-<h1>About Advocate Maaz Ullah</h1>
+<section class="hero">
 
-<p class="gold">
-Advocate | Allahabad High Court, Lucknow Bench
-</p>
+    <div class="hero-content">
 
-<p>
-Advocate Maaz Ullah is a dedicated legal professional practicing in
-Allahabad High Court (Lucknow Bench) and Lucknow District Courts.
-</p>
+        <div class="kicker">
+            ABOUT THE ADVOCATE
+        </div>
 
-<p>
-He is committed to providing professional, confidential and
-client-focused legal assistance with careful attention to each matter.
-</p>
+        <h1>
+            Advocate<br>
+            Maaz Ullah
+        </h1>
 
-<h2>Practice</h2>
+        <p>
+            Professional legal consultation and representation
+            at Allahabad High Court, Lucknow Bench and
+            Lucknow District Courts.
+        </p>
 
-<ul>
-<li>Allahabad High Court · Lucknow Bench</li>
-<li>Lucknow District Courts</li>
-<li>Relevant district court proceedings</li>
-<li>Consumer disputes and appropriate proceedings</li>
-</ul>
+    </div>
 
-<h2>Professional Approach</h2>
+</section>
 
-<ul>
-<li>Experienced Court Practice</li>
-<li>Ethical & Confidential Handling</li>
-<li>Client-Focused Legal Strategy</li>
-<li>Professional Legal Consultation</li>
-</ul>
 
-<h2>Chamber</h2>
+<!-- PROFILE -->
 
-<p>
-003/326, Viram Khand-3,<br>
-Gomti Nagar, Lucknow – 226010
-</p>
+<section class="profile">
 
-<a class="btn" href="contact.html">Contact Advocate</a>
+    <div class="profile-grid">
 
-</div>
 
-</div>
+        <div class="profile-box">
+
+            <div class="initial">
+                M
+            </div>
+
+            <h3>
+                Maaz Ullah
+            </h3>
+
+            <p>
+                Advocate · Lucknow
+            </p>
+
+        </div>
+
+
+        <div class="profile-content">
+
+            <span class="kicker">
+                PROFESSIONAL PROFILE
+            </span>
+
+            <h2>
+                Dedicated to
+                professional legal representation.
+            </h2>
+
+            <p>
+                Advocate Maaz Ullah is a legal professional
+                practicing in Lucknow, with practice before
+                the Allahabad High Court, Lucknow Bench and
+                Lucknow District Courts.
+            </p>
+
+            <p>
+                The practice is focused on providing clients
+                with professional legal consultation,
+                representation and assistance according to
+                the nature and requirements of each matter.
+            </p>
+
+            <p>
+                Every legal matter is approached with careful
+                attention, clear communication and appropriate
+                legal strategy.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HIGHLIGHTS -->
+
+<section class="highlights">
+
+    <div class="section-heading">
+
+        <div class="kicker">
+            PROFESSIONAL APPROACH
+        </div>
+
+        <h2>
+            Built Around the Client
+        </h2>
+
+        <p>
+            A professional approach to understanding,
+            preparing and representing legal matters.
+        </p>
+
+    </div>
+
+
+    <div class="highlight-grid">
+
+
+        <div class="highlight">
+
+            <div class="highlight-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <h3>
+                Legal Strategy
+            </h3>
+
+            <p>
+                Each matter is carefully considered to
+                understand the relevant legal issues and
+                available course of action.
+            </p>
+
+        </div>
+
+
+        <div class="highlight">
+
+            <div class="highlight-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <h3>
+                Clear Communication
+            </h3>
+
+            <p>
+                Clients should understand their legal
+                position, available options and important
+                next steps.
+            </p>
+
+        </div>
+
+
+        <div class="highlight">
+
+            <div class="highlight-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>
+                Confidentiality
+            </h3>
+
+            <p>
+                Legal matters and client information are
+                handled with appropriate professional
+                confidentiality.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- PRACTICE -->
+
+<section class="practice">
+
+    <div class="practice-inner">
+
+        <div class="section-heading">
+
+            <div class="kicker">
+                AREAS OF PRACTICE
+            </div>
+
+            <h2>
+                Legal Matters
+            </h2>
+
+            <p>
+                Professional assistance across a range
+                of legal matters.
+            </p>
+
+        </div>
+
+
+        <div class="practice-grid">
+
+            <div class="practice-item">
+                <span class="practice-number">01</span>
+                <strong>Criminal Matters</strong>
+            </div>
+
+            <div class="practice-item">
+                <span class="practice-number">02</span>
+                <strong>Civil Matters</strong>
+            </div>
+
+            <div class="practice-item">
+                <span class="practice-number">03</span>
+                <strong>Family & Matrimonial Matters</strong>
+            </div>
+
+            <div class="practice-item">
+                <span class="practice-number">04</span>
+                <strong>Property Matters</strong>
+            </div>
+
+            <div class="practice-item">
+                <span class="practice-number">05</span>
+                <strong>Consumer Matters</strong>
+            </div>
+
+            <div class="practice-item">
+                <span class="practice-number">06</span>
+                <strong>Legal Consultation</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- APPROACH -->
+
+<section class="approach">
+
+    <div class="approach-grid">
+
+
+        <div>
+
+            <div class="kicker">
+                PROFESSIONAL COMMITMENT
+            </div>
+
+            <h2>
+                A careful approach to every legal matter.
+            </h2>
+
+            <p>
+                Legal proceedings can be complex. A clear
+                understanding of the matter and proper
+                preparation are important parts of effective
+                legal representation.
+            </p>
+
+            <ul class="approach-list">
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Careful understanding of the matter
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Professional legal consultation
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Clear communication with clients
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Appropriate legal strategy
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="approach-card">
+
+            <h3>
+                Courts of Practice
+            </h3>
+
+            <p>
+                <strong>Allahabad High Court</strong><br>
+                Lucknow Bench
+            </p>
+
+            <br>
+
+            <p>
+                <strong>District Courts</strong><br>
+                Lucknow and relevant district court proceedings.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Consumer Forum</strong><br>
+                Consumer disputes and appropriate proceedings.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="kicker">
+        LEGAL CONSULTATION
+    </div>
+
+    <h2>
+        Need Legal Assistance?
+    </h2>
+
+    <p>
+        Contact Advocate Maaz Ullah for professional legal consultation.
+    </p>
+
+    <a href="contact.html" class="btn btn-gold">
+        <i class="fa-solid fa-phone"></i>
+        Contact Advocate
+    </a>
+
+    <a href="https://wa.me/918808312042"
+       target="_blank"
+       class="btn btn-outline">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-© 2026 Advocate Maaz Ullah · All Rights Reserved
+
+    © 2026
+    <strong>Advocate Maaz Ullah</strong>
+    · All Rights Reserved
+
 </footer>
 
 </body>
