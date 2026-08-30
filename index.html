@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Advocate Maaz Ullah | Lucknow</title>
+<title>Maaz Legal Associates | Advocate Maaz Ullah | Lucknow</title>
 
 <meta name="description"
-content="Advocate Maaz Ullah, legal practitioner at Allahabad High Court Lucknow Bench and Lucknow District Courts.">
+content="Maaz Legal Associates - Advocate Maaz Ullah, providing professional legal consultation and representation in Lucknow.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,54 +36,70 @@ body{
     color:#172333;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
-    height:86px;
-    padding:0 7%;
-    background:#fff;
+    min-height:88px;
+    padding:16px 7%;
+    background:#ffffff;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
     border-bottom:1px solid #ddd6c8;
+
     position:relative;
     z-index:20;
 }
 
 .logo{
     text-decoration:none;
+    display:block;
 }
 
 .logo-name{
     display:block;
+
     font-family:"DM Serif Display",Georgia,serif;
+
     color:#172333;
-    font-size:28px;
-    line-height:1;
+
+    font-size:25px;
+    line-height:1.1;
 }
 
 .logo-title{
     display:block;
+
     color:#b48a3c;
-    font-size:10px;
-    letter-spacing:4px;
+
+    font-size:9px;
+    letter-spacing:3px;
+
     font-weight:700;
-    margin-top:8px;
+
+    margin-top:7px;
 }
 
 .nav-links{
     display:flex;
+
     gap:30px;
+
     list-style:none;
 }
 
 .nav-links a{
     text-decoration:none;
+
     color:#172333;
+
     font-size:14px;
     font-weight:600;
+
     transition:.3s;
 }
 
@@ -91,23 +107,30 @@ nav{
     color:#b48a3c;
 }
 
-/* HERO */
+.nav-links .active{
+    color:#b48a3c;
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    min-height:calc(100vh - 86px);
+    min-height:calc(100vh - 88px);
+
     padding:90px 7%;
 
     display:flex;
     align-items:center;
 
-    color:#fff;
+    color:#ffffff;
 
     background:
     linear-gradient(
         90deg,
-        rgba(8,18,29,.94),
-        rgba(8,18,29,.78),
-        rgba(8,18,29,.55)
+        rgba(7,17,28,.95),
+        rgba(7,17,28,.80),
+        rgba(7,17,28,.58)
     ),
     url("supreme%20court.webp");
 
@@ -116,193 +139,445 @@ nav{
 }
 
 .hero-content{
-    max-width:850px;
+    max-width:900px;
 }
 
 .kicker{
     color:#d3a854;
+
     font-size:12px;
+
     letter-spacing:5px;
+
     font-weight:700;
+
     margin-bottom:22px;
 }
 
 .hero h1{
     font-family:"DM Serif Display",Georgia,serif;
-    font-size:clamp(52px,7vw,82px);
+
+    font-size:clamp(50px,7vw,82px);
+
     font-weight:400;
-    line-height:1.03;
+
+    line-height:1.04;
+
     margin-bottom:25px;
 }
 
+.hero h1 span{
+    color:#d3a854;
+}
+
+.hero-subtitle{
+    color:#ffffff;
+
+    font-size:21px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+}
+
 .hero p{
-    max-width:720px;
-    color:#e1e5e9;
-    font-size:19px;
+    max-width:760px;
+
+    color:#dce2e7;
+
+    font-size:17px;
+
     line-height:1.8;
 }
 
 .hero-buttons{
     margin-top:35px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
 }
+
+/* BUTTONS */
 
 .btn{
     display:inline-flex;
+
     align-items:center;
+
     gap:9px;
+
     padding:14px 25px;
-    margin-right:8px;
+
     text-decoration:none;
+
     font-size:14px;
+
     font-weight:700;
+
     transition:.3s;
 }
 
 .btn-gold{
     background:#c29a4b;
-    color:#fff;
+
+    color:#ffffff;
 }
 
 .btn-gold:hover{
-    background:#d6b266;
+    background:#d5ae65;
 }
 
 .btn-outline{
     border:1px solid #d3a854;
-    color:#fff;
+
+    color:#ffffff;
 }
 
 .btn-outline:hover{
-    background:#fff;
+    background:#ffffff;
+
     color:#172333;
 }
 
-/* INTRO */
+/* =========================
+   INTRO
+========================= */
 
 .intro{
-    padding:90px 7%;
+    padding:95px 7%;
+
     background:#f7f5f0;
 }
 
 .intro-inner{
-    max-width:1150px;
+    max-width:900px;
+
     margin:auto;
+
     text-align:center;
 }
 
 .intro h2{
     font-family:"DM Serif Display",Georgia,serif;
+
     font-size:47px;
+
     font-weight:400;
-    margin-bottom:20px;
+
+    color:#172333;
+
+    margin-bottom:22px;
 }
 
 .intro p{
-    max-width:850px;
-    margin:auto;
-    color:#5c6268;
+    color:#5d646b;
+
     font-size:17px;
+
     line-height:1.9;
 }
 
-/* COURTS */
+/* =========================
+   COURTS
+========================= */
 
 .courts{
-    padding:85px 7%;
-    background:#fff;
+    padding:90px 7%;
+
+    background:#ffffff;
 }
 
 .section-title{
+    max-width:700px;
+
+    margin:0 auto 50px;
+
     text-align:center;
-    margin-bottom:48px;
 }
 
 .section-title .kicker{
     color:#b48a3c;
+
     margin-bottom:10px;
 }
 
 .section-title h2{
     font-family:"DM Serif Display",Georgia,serif;
+
     font-size:46px;
+
     font-weight:400;
+
+    color:#172333;
+}
+
+.section-title p{
+    margin-top:12px;
+
+    color:#666;
 }
 
 .court-grid{
     max-width:1150px;
+
     margin:auto;
 
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:22px;
+
+    gap:23px;
 }
 
 .court-card{
-    padding:34px 28px;
+    padding:35px 28px;
+
     background:#f7f5f0;
+
     border-top:4px solid #c29a4b;
+
     transition:.3s;
 }
 
 .court-card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-7px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
 .court-card i{
     color:#b48a3c;
-    font-size:28px;
+
+    font-size:29px;
+
     margin-bottom:20px;
 }
 
 .court-card h3{
     font-family:"DM Serif Display",Georgia,serif;
-    font-size:25px;
+
+    color:#172333;
+
+    font-size:26px;
+
     font-weight:400;
+
     margin-bottom:10px;
 }
 
 .court-card p{
     color:#666;
+
     font-size:14px;
+
+    line-height:1.7;
 }
 
-/* CTA */
+/* =========================
+   PRACTICE AREAS
+========================= */
+
+.practice{
+    padding:90px 7%;
+
+    background:#172333;
+
+    color:#ffffff;
+}
+
+.practice-inner{
+    max-width:1150px;
+
+    margin:auto;
+}
+
+.practice .section-title h2{
+    color:#ffffff;
+}
+
+.practice .section-title p{
+    color:#cbd2d9;
+}
+
+.practice-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+}
+
+.practice-item{
+    padding:24px 25px;
+
+    border:1px solid rgba(211,168,84,.35);
+
+    background:rgba(255,255,255,.035);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:17px;
+
+    transition:.3s;
+}
+
+.practice-item:hover{
+    border-color:#d3a854;
+
+    transform:translateX(5px);
+}
+
+.practice-number{
+    color:#d3a854;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+}
+
+.practice-item strong{
+    font-size:15px;
+}
+
+/* =========================
+   BRAND SECTION
+========================= */
+
+.brand-section{
+    padding:90px 7%;
+
+    background:#f7f5f0;
+}
+
+.brand-inner{
+    max-width:1150px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:65px;
+
+    align-items:center;
+}
+
+.brand-inner h2{
+    font-family:"DM Serif Display",Georgia,serif;
+
+    font-size:48px;
+
+    font-weight:400;
+
+    color:#172333;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+}
+
+.brand-inner h2 span{
+    color:#b48a3c;
+}
+
+.brand-inner p{
+    color:#5b6269;
+
+    font-size:16px;
+
+    line-height:1.85;
+
+    margin-bottom:17px;
+}
+
+.brand-card{
+    background:#172333;
+
+    color:#ffffff;
+
+    padding:45px;
+
+    border-left:5px solid #c29a4b;
+}
+
+.brand-card .big{
+    font-family:"DM Serif Display",Georgia,serif;
+
+    font-size:42px;
+
+    color:#d3a854;
+
+    line-height:1.15;
+
+    margin-bottom:15px;
+}
+
+.brand-card p{
+    color:#d0d6dc;
+
+    margin:0;
+}
+
+/* =========================
+   CTA
+========================= */
 
 .cta{
-    padding:90px 7%;
+    padding:95px 7%;
+
     text-align:center;
-    color:#fff;
+
+    color:#ffffff;
 
     background:
     linear-gradient(
-        rgba(10,20,32,.94),
-        rgba(10,20,32,.94)
+        rgba(7,17,28,.94),
+        rgba(7,17,28,.94)
     ),
     url("supreme%20court.webp");
 
     background-size:cover;
+
     background-position:center;
 }
 
 .cta h2{
     font-family:"DM Serif Display",Georgia,serif;
-    font-size:48px;
+
+    font-size:49px;
+
     font-weight:400;
+
     margin-bottom:15px;
 }
 
 .cta p{
     color:#d1d7dd;
+
     margin-bottom:28px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#08131f;
+
     color:#9ca5ae;
+
     text-align:center;
-    padding:28px 20px;
+
+    padding:29px 20px;
+
     font-size:13px;
 }
 
@@ -310,36 +585,48 @@ footer strong{
     color:#d3a854;
 }
 
-/* FLOATING CONTACT BUTTONS */
+/* =========================
+   FLOATING CONTACT
+========================= */
 
 .floating-contact{
     position:fixed;
+
     right:22px;
+
     bottom:22px;
 
     display:flex;
+
     flex-direction:column;
+
     gap:12px;
 
     z-index:9999;
 }
 
 .float-btn{
-    width:55px;
-    height:55px;
+    position:relative;
+
+    width:56px;
+
+    height:56px;
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     text-decoration:none;
 
-    color:#fff;
+    color:#ffffff;
+
     font-size:23px;
 
-    box-shadow:0 6px 20px rgba(0,0,0,.3);
+    box-shadow:0 7px 22px rgba(0,0,0,.35);
 
     transition:.3s;
 }
@@ -356,28 +643,31 @@ footer strong{
     background:#b48a3c;
 }
 
-/* SMALL LABEL NEXT TO BUTTON */
-
-.float-btn{
-    position:relative;
-}
-
 .float-label{
     position:absolute;
+
     right:68px;
+
+    top:50%;
+
+    transform:translateY(-50%);
 
     white-space:nowrap;
 
     background:#172333;
-    color:#fff;
+
+    color:#ffffff;
 
     padding:7px 11px;
+
     border-radius:4px;
 
     font-size:11px;
+
     opacity:0;
 
     pointer-events:none;
+
     transition:.25s;
 }
 
@@ -385,39 +675,46 @@ footer strong{
     opacity:1;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
     nav{
-        height:auto;
+        min-height:auto;
+
         padding:17px 5%;
+
         flex-direction:column;
+
         gap:18px;
     }
 
     .nav-links{
         gap:15px;
+
         flex-wrap:wrap;
+
         justify-content:center;
     }
 
     .hero{
-        min-height:calc(100vh - 130px);
-        padding:70px 6%;
-    }
+        min-height:calc(100vh - 135px);
 
-    .hero h1{
-        font-size:48px;
+        padding:70px 6%;
     }
 
     .court-grid{
         grid-template-columns:1fr;
     }
 
-    .intro,
-    .courts{
-        padding:65px 6%;
+    .brand-inner{
+        grid-template-columns:1fr;
+    }
+
+    .practice-grid{
+        grid-template-columns:1fr;
     }
 
 }
@@ -425,11 +722,12 @@ footer strong{
 @media(max-width:550px){
 
     .logo-name{
-        font-size:24px;
+        font-size:22px;
     }
 
     .nav-links{
-        gap:10px 16px;
+        gap:9px 15px;
+
         font-size:12px;
     }
 
@@ -438,7 +736,11 @@ footer strong{
     }
 
     .hero h1{
-        font-size:41px;
+        font-size:42px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
     }
 
     .hero p{
@@ -446,18 +748,29 @@ footer strong{
     }
 
     .hero-buttons{
-        display:flex;
         flex-direction:column;
+
         align-items:flex-start;
     }
 
-    .btn{
-        margin-bottom:10px;
+    .intro,
+    .courts,
+    .practice,
+    .brand-section{
+        padding:65px 6%;
     }
 
     .intro h2,
     .section-title h2{
         font-size:36px;
+    }
+
+    .brand-inner h2{
+        font-size:37px;
+    }
+
+    .cta{
+        padding:65px 6%;
     }
 
     .cta h2{
@@ -466,12 +779,15 @@ footer strong{
 
     .floating-contact{
         right:15px;
+
         bottom:15px;
     }
 
     .float-btn{
         width:52px;
+
         height:52px;
+
         font-size:21px;
     }
 
@@ -483,18 +799,20 @@ footer strong{
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
     <a href="index.html" class="logo">
 
         <span class="logo-name">
-            Maaz Ullah
+            Maaz Legal Associates
         </span>
 
         <span class="logo-title">
-            ADVOCATE
+            LEGAL ASSOCIATES
         </span>
 
     </a>
@@ -503,23 +821,33 @@ footer strong{
     <ul class="nav-links">
 
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">
+                Home
+            </a>
         </li>
 
         <li>
-            <a href="about.html">About</a>
+            <a href="about.html">
+                About
+            </a>
         </li>
 
         <li>
-            <a href="services.html">Services</a>
+            <a href="services.html">
+                Services
+            </a>
         </li>
 
         <li>
-            <a href="gallery.html">Gallery</a>
+            <a href="gallery.html">
+                Gallery
+            </a>
         </li>
 
         <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">
+                Contact
+            </a>
         </li>
 
     </ul>
@@ -527,37 +855,54 @@ footer strong{
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
     <div class="hero-content">
 
         <div class="kicker">
-            ADVOCATE · LUCKNOW
+            MAAZ LEGAL ASSOCIATES · LUCKNOW
         </div>
+
 
         <h1>
             Advocate<br>
-            Maaz Ullah
+            <span>Maaz Ullah</span>
         </h1>
 
+
+        <div class="hero-subtitle">
+            Professional Legal Representation
+        </div>
+
+
         <p>
-            Professional legal consultation and representation
-            before the Allahabad High Court, Lucknow Bench
-            and Lucknow District Courts.
+            Legal consultation and representation before
+            the Allahabad High Court, Lucknow Bench,
+            Lucknow District Courts and appropriate forums.
         </p>
 
 
         <div class="hero-buttons">
 
             <a href="about.html" class="btn btn-gold">
+
                 <i class="fa-solid fa-scale-balanced"></i>
-                Explore Profile
+
+                About the Advocate
+
             </a>
 
+
             <a href="contact.html" class="btn btn-outline">
+
+                <i class="fa-solid fa-envelope"></i>
+
                 Contact
+
             </a>
 
         </div>
@@ -567,25 +912,29 @@ footer strong{
 </section>
 
 
-<!-- INTRO -->
+<!-- =========================
+     INTRODUCTION
+========================= -->
 
 <section class="intro">
 
     <div class="intro-inner">
 
         <div class="kicker">
-            PROFESSIONAL LEGAL SERVICES
+            MAAZ LEGAL ASSOCIATES
         </div>
 
+
         <h2>
-            Clear. Professional. Client Focused.
+            Professional. Clear. Client Focused.
         </h2>
 
+
         <p>
-            Advocate Maaz Ullah provides professional legal
-            consultation, representation and assistance
-            according to the nature and requirements of
-            each legal matter.
+            Maaz Legal Associates provides professional
+            legal consultation, representation and assistance
+            according to the nature and requirements of each
+            legal matter.
         </p>
 
     </div>
@@ -593,7 +942,9 @@ footer strong{
 </section>
 
 
-<!-- COURTS -->
+<!-- =========================
+     COURTS
+========================= -->
 
 <section class="courts">
 
@@ -603,9 +954,16 @@ footer strong{
             PRACTICE
         </div>
 
+
         <h2>
             Courts & Forums
         </h2>
+
+
+        <p>
+            Professional legal representation across
+            relevant courts and forums.
+        </p>
 
     </div>
 
@@ -617,9 +975,11 @@ footer strong{
 
             <i class="fa-solid fa-building-columns"></i>
 
+
             <h3>
                 High Court
             </h3>
+
 
             <p>
                 Allahabad High Court · Lucknow Bench
@@ -632,9 +992,11 @@ footer strong{
 
             <i class="fa-solid fa-scale-balanced"></i>
 
+
             <h3>
                 District Courts
             </h3>
+
 
             <p>
                 Lucknow and relevant district court proceedings.
@@ -647,9 +1009,11 @@ footer strong{
 
             <i class="fa-solid fa-gavel"></i>
 
+
             <h3>
                 Consumer Forum
             </h3>
+
 
             <p>
                 Consumer disputes and appropriate proceedings.
@@ -663,7 +1027,186 @@ footer strong{
 </section>
 
 
-<!-- CTA -->
+<!-- =========================
+     PRACTICE AREAS
+========================= -->
+
+<section class="practice">
+
+    <div class="practice-inner">
+
+        <div class="section-title">
+
+            <div class="kicker">
+                AREAS OF PRACTICE
+            </div>
+
+
+            <h2>
+                Legal Matters
+            </h2>
+
+
+            <p>
+                Professional assistance across a range
+                of legal matters.
+            </p>
+
+        </div>
+
+
+        <div class="practice-grid">
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    01
+                </span>
+
+                <strong>
+                    Criminal Matters
+                </strong>
+
+            </div>
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    02
+                </span>
+
+                <strong>
+                    Civil Matters
+                </strong>
+
+            </div>
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    03
+                </span>
+
+                <strong>
+                    Family & Matrimonial Matters
+                </strong>
+
+            </div>
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    04
+                </span>
+
+                <strong>
+                    Property Matters
+                </strong>
+
+            </div>
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    05
+                </span>
+
+                <strong>
+                    Consumer Matters
+                </strong>
+
+            </div>
+
+
+            <div class="practice-item">
+
+                <span class="practice-number">
+                    06
+                </span>
+
+                <strong>
+                    Legal Consultation
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BRAND
+========================= -->
+
+<section class="brand-section">
+
+    <div class="brand-inner">
+
+
+        <div>
+
+            <div class="kicker">
+                THE FIRM
+            </div>
+
+
+            <h2>
+                <span>Maaz Legal Associates</span>
+                represents a commitment to professional
+                legal assistance.
+            </h2>
+
+
+            <p>
+                Every legal matter requires careful
+                understanding, preparation and appropriate
+                representation.
+            </p>
+
+
+            <p>
+                Our approach is focused on clear communication,
+                professional consultation and understanding
+                the requirements of each client.
+            </p>
+
+        </div>
+
+
+        <div class="brand-card">
+
+            <div class="big">
+                Advocate<br>
+                Maaz Ullah
+            </div>
+
+
+            <p>
+                Professional legal practice in Lucknow,
+                including the Allahabad High Court,
+                Lucknow Bench and Lucknow District Courts.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
 
 <section class="cta">
 
@@ -671,12 +1214,15 @@ footer strong{
         LEGAL CONSULTATION
     </div>
 
+
     <h2>
         Need Legal Assistance?
     </h2>
 
+
     <p>
-        Contact Advocate Maaz Ullah for professional legal consultation.
+        Contact Maaz Legal Associates for professional
+        legal consultation.
     </p>
 
 
@@ -689,9 +1235,11 @@ footer strong{
     </a>
 
 
-    <a href="https://wa.me/918808312042"
-       target="_blank"
-       class="btn btn-outline">
+    <a
+        href="https://wa.me/918808312042"
+        target="_blank"
+        class="btn btn-outline"
+    >
 
         <i class="fa-brands fa-whatsapp"></i>
 
@@ -702,18 +1250,22 @@ footer strong{
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     © 2026
-    <strong>Advocate Maaz Ullah</strong>
+    <strong>Maaz Legal Associates</strong>
     · All Rights Reserved
 
 </footer>
 
 
-<!-- FLOATING CALL + WHATSAPP -->
+<!-- =========================
+     FLOATING CALL + WHATSAPP
+========================= -->
 
 <div class="floating-contact">
 
