@@ -1,263 +1,827 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact Advocate Maaz Ullah | Lucknow</title>
+<title>Contact | Maaz Legal Associates</title>
+
+<meta name="description"
+content="Contact Maaz Legal Associates, Advocate Maaz Ullah in Lucknow for legal consultation and representation.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f7f7f7;
-  color:#222;
-  line-height:1.7;
+    font-family:"Inter",Arial,sans-serif;
+    background:#f6f3ed;
+    color:#17202b;
 }
 
+
+/* ================= NAVIGATION ================= */
+
 nav{
-  background:#0d1b2a;
-  padding:18px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+    width:100%;
+    background:#ffffff;
+    padding:20px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e4dccd;
 }
 
 .logo{
-  color:white;
-  font-size:22px;
-  font-weight:bold;
+    text-decoration:none;
+    color:#17202b;
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:27px;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:25px;
+.logo span{
+    display:block;
+    margin-top:5px;
+    color:#b58a3c;
+    font-family:"Inter",Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:4px;
+    font-weight:700;
 }
 
-.container{
-  max-width:1050px;
-  margin:60px auto;
-  padding:0 25px;
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
 }
 
-.heading{
-  text-align:center;
-  margin-bottom:40px;
+.nav-links a{
+    color:#17202b;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
 }
 
-.heading h1{
-  color:#0d1b2a;
-  font-size:38px;
+.nav-links a:hover{
+    color:#b58a3c;
 }
 
-.heading p{
-  color:#666;
-  margin-top:8px;
+
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+    padding:90px 7% 80px;
+
+    background:
+    linear-gradient(
+        rgba(14,27,42,.94),
+        rgba(14,27,42,.94)
+    ),
+    url("https://maaz018786.github.io/maaz-website/supreme%20court.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
 }
 
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:25px;
+.hero-inner{
+    max-width:800px;
+    margin:auto;
 }
+
+.kicker{
+    color:#d1a34d;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:58px;
+    font-weight:400;
+    margin-bottom:18px;
+}
+
+.hero p{
+    color:#d4d9df;
+    line-height:1.8;
+    font-size:16px;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section{
+    padding:90px 7%;
+}
+
+.contact-container{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ================= CONTACT CARD ================= */
 
 .card{
-  background:white;
-  padding:30px;
-  border-radius:10px;
-  box-shadow:0 4px 18px rgba(0,0,0,.08);
-  border-top:4px solid #c5a059;
+    background:#ffffff;
+    border:1px solid #e2dbce;
+    padding:38px;
 }
 
-.card h2{
-  color:#0d1b2a;
-  margin-bottom:12px;
+.card-title{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:#17202b;
+    font-size:31px;
+    font-weight:400;
+    margin-bottom:30px;
 }
 
-.card p{
-  color:#555;
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:17px;
+
+    padding:20px 0;
+
+    border-bottom:1px solid #eee8dc;
 }
 
-.card a{
-  color:#0d1b2a;
-  text-decoration:none;
-  font-weight:bold;
+.contact-item:last-child{
+    border-bottom:none;
 }
 
-.card a:hover{
-  text-decoration:underline;
+.icon{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    background:#f6f3ed;
+    color:#b58a3c;
+
+    font-size:18px;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:18px;
-  padding:11px 20px;
-  background:#c5a059;
-  color:white !important;
-  text-decoration:none !important;
-  border-radius:5px;
-  font-weight:bold;
+.contact-item h3{
+    font-size:14px;
+    color:#17202b;
+    margin-bottom:5px;
+}
+
+.contact-item p,
+.contact-item a{
+    color:#666;
+    font-size:14px;
+    line-height:1.7;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    color:#b58a3c;
+}
+
+
+/* ================= PRACTICE ================= */
+
+.practice{
+    margin-top:25px;
+    background:#17202b;
+    color:white;
+    padding:32px;
+}
+
+.practice h3{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:28px;
+    font-weight:400;
+    color:#d1a34d;
+    margin-bottom:20px;
+}
+
+.practice ul{
+    list-style:none;
+}
+
+.practice li{
+    padding:10px 0;
+    color:#d4d9df;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.practice li:last-child{
+    border-bottom:none;
+}
+
+.practice li::before{
+    content:"✓";
+    color:#d1a34d;
+    margin-right:10px;
+}
+
+
+/* ================= MAP ================= */
+
+.map-card{
+    padding:0;
+    overflow:hidden;
+}
+
+.map-heading{
+    padding:32px 35px 20px;
+}
+
+.map-heading h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:31px;
+    font-weight:400;
+    color:#17202b;
+}
+
+.map-heading p{
+    color:#666;
+    font-size:14px;
+    margin-top:7px;
 }
 
 .map{
-  margin-top:30px;
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 4px 18px rgba(0,0,0,.08);
+    width:100%;
+    height:390px;
+    border:0;
+    display:block;
 }
 
-.map h2{
-  color:#0d1b2a;
-  margin-bottom:15px;
+
+/* ================= MAP BUTTON ================= */
+
+.map-button{
+    padding:25px 35px;
+    background:white;
 }
 
-.map iframe{
-  width:100%;
-  height:350px;
-  border:0;
-  border-radius:8px;
+.map-button a{
+    display:inline-block;
+    background:#b58a3c;
+    color:white;
+    text-decoration:none;
+    padding:13px 22px;
+    font-size:14px;
+    font-weight:700;
+    transition:.3s;
 }
+
+.map-button a:hover{
+    background:#d1a34d;
+}
+
+
+/* ================= QUICK CONTACT ================= */
+
+.quick{
+    max-width:1150px;
+    margin:0 auto;
+    padding:0 0 90px;
+}
+
+.quick-inner{
+    background:#b58a3c;
+    color:white;
+    padding:45px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.quick h2{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:36px;
+    font-weight:400;
+}
+
+.quick p{
+    margin-top:8px;
+    font-size:14px;
+}
+
+.quick-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.quick-btn{
+    display:inline-block;
+    padding:14px 22px;
+    background:white;
+    color:#17202b;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+}
+
+.quick-btn.dark{
+    background:#17202b;
+    color:white;
+}
+
+
+/* ================= FOOTER ================= */
 
 footer{
-  margin-top:60px;
-  background:#0d1b2a;
-  color:white;
-  text-align:center;
-  padding:25px;
+    background:#08121c;
+    color:#aeb5bc;
+    padding:40px 7% 25px;
 }
 
-@media(max-width:700px){
-  nav{
-    flex-direction:column;
-    gap:15px;
-  }
+.footer-inner{
+    max-width:1150px;
+    margin:auto;
 
-  nav a{
-    margin:0 8px;
-  }
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
 
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+    padding-bottom:25px;
 
-  .heading h1{
-    font-size:30px;
-  }
+    border-bottom:1px solid rgba(255,255,255,.1);
 }
+
+.footer-brand{
+    font-family:"DM Serif Display",Georgia,serif;
+    color:white;
+    font-size:25px;
+}
+
+.footer-brand span{
+    display:block;
+    color:#d1a34d;
+    font-family:"Inter",Arial,sans-serif;
+    font-size:10px;
+    letter-spacing:3px;
+    margin-top:5px;
+}
+
+.footer-info{
+    text-align:right;
+    font-size:13px;
+    line-height:1.8;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:22px;
+    font-size:12px;
+    color:#707982;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    nav{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .nav-links{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .quick-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+    }
+
+    .footer-info{
+        text-align:left;
+    }
+}
+
+
+@media(max-width:550px){
+
+    nav{
+        padding:18px 5%;
+    }
+
+    .nav-links{
+        gap:12px 17px;
+    }
+
+    .nav-links a{
+        font-size:13px;
+    }
+
+    .hero{
+        padding:65px 6%;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .contact-section{
+        padding:60px 5%;
+    }
+
+    .card{
+        padding:25px 20px;
+    }
+
+    .quick{
+        padding:0 5% 60px;
+    }
+
+    .quick-inner{
+        padding:32px 25px;
+    }
+
+    .quick h2{
+        font-size:30px;
+    }
+
+}
+
 </style>
 </head>
 
+
 <body>
 
-<nav>
-  <div class="logo">Advocate Maaz Ullah</div>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+<a href="index.html" class="logo">
+    Maaz Legal Associates
+    <span>ADVOCATE · LUCKNOW</span>
+</a>
+
+<ul class="nav-links">
+
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+
+    <li>
+        <a href="about.html">About</a>
+    </li>
+
+    <li>
+        <a href="services.html">Services</a>
+    </li>
+
+    <li>
+        <a href="gallery.html">Gallery</a>
+    </li>
+
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+
+</ul>
+
 </nav>
 
-<div class="container">
 
-  <div class="heading">
-    <h1>Contact Advocate</h1>
-    <p>For legal consultation and professional assistance</p>
-  </div>
+<!-- ================= HERO ================= -->
 
-  <div class="contact-grid">
+<section class="hero">
 
-    <div class="card">
-      <h2>📞 Call</h2>
-      <p>For direct communication:</p>
-      <a class="btn" href="tel:+918808312042">Call +91 8808312042</a>
-    </div>
+<div class="hero-inner">
 
-    <div class="card">
-      <h2>💬 WhatsApp</h2>
-      <p>Contact for consultation on WhatsApp:</p>
-      <a class="btn"
-         href="https://wa.me/918808312042"
-         target="_blank">
-         Chat on WhatsApp
-      </a>
-    </div>
+<div class="kicker">
+GET IN TOUCH
+</div>
 
-    <div class="card">
-      <h2>✉️ Email</h2>
-      <p>
-        <a href="mailto:advocatemaazulla@gmail.com">
-          advocatemaazulla@gmail.com
-        </a>
-      </p>
-      <a class="btn"
-         href="mailto:advocatemaazulla@gmail.com">
-         Send Email
-      </a>
-    </div>
+<h1>
+Contact Maaz Legal Associates
+</h1>
 
-    <div class="card">
-      <h2>🏢 Chamber</h2>
-      <p>
-        003/326, Viram Khand-3,<br>
-        Gomti Nagar,<br>
-        Lucknow – 226010
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>🏠 Residence</h2>
-      <p>
-        536/1/568, New Madeh Ganj,<br>
-        Khadra,<br>
-        Lucknow – 226020
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>⚖️ Practice</h2>
-      <p>
-        Allahabad High Court · Lucknow Bench<br>
-        Lucknow District Courts<br>
-        Consumer Forum
-      </p>
-    </div>
-
-  </div>
-
-  <div class="map">
-
-    <h2>📍 Chamber Location</h2>
-
-    <p>
-      003/326, Viram Khand-3, Gomti Nagar,
-      Lucknow – 226010
-    </p>
-
-    <br>
-
-    <iframe
-      src="https://www.google.com/maps?q=26.851095,80.949958&z=15&output=embed"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
-
-  </div>
+<p>
+For professional legal consultation and representation,
+get in touch with Advocate Maaz Ullah.
+</p>
 
 </div>
 
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+<div class="contact-container">
+
+
+<!-- LEFT -->
+
+<div>
+
+<div class="card">
+
+<h2 class="card-title">
+Contact Details
+</h2>
+
+
+<div class="contact-item">
+
+<div class="icon">☎</div>
+
+<div>
+
+<h3>Call</h3>
+
+<a href="tel:+918808312042">
++91 8808312042
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">☏</div>
+
+<div>
+
+<h3>WhatsApp</h3>
+
+<a href="https://wa.me/918808312042"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">✉</div>
+
+<div>
+
+<h3>Email</h3>
+
+<a href="mailto:advocatemaazulla@gmail.com">
+
+advocatemaazulla@gmail.com
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">⌂</div>
+
+<div>
+
+<h3>Chamber / Office</h3>
+
+<p>
+003/326, Viram Khand-3,<br>
+Gomti Nagar, Lucknow – 226010
+</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="icon">⌂</div>
+
+<div>
+
+<h3>Residence</h3>
+
+<p>
+536/1/568, New Madeh Ganj,<br>
+Khadra, Lucknow – 226020
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- PRACTICE -->
+
+<div class="practice">
+
+<h3>
+Areas of Practice
+</h3>
+
+<ul>
+
+<li>
+Allahabad High Court · Lucknow Bench
+</li>
+
+<li>
+Lucknow District Courts
+</li>
+
+<li>
+Consumer Forum
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT / MAP -->
+
+<div class="card map-card">
+
+<div class="map-heading">
+
+<h2>
+Chamber Location
+</h2>
+
+<p>
+003/326, Viram Khand-3, Gomti Nagar, Lucknow – 226010
+</p>
+
+</div>
+
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=26.8510958,80.9499588&z=15&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+
+<div class="map-button">
+
+<a
+href="https://maps.app.goo.gl/zrmD5md3Z25qmUPb6"
+target="_blank">
+
+View Chamber on Google Maps
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= QUICK CONTACT ================= -->
+
+<section class="quick">
+
+<div class="quick-inner">
+
+<div>
+
+<h2>
+Let's Discuss Your Legal Matter
+</h2>
+
+<p>
+Professional consultation with confidentiality and personal attention.
+</p>
+
+</div>
+
+
+<div class="quick-buttons">
+
+<a
+href="tel:+918808312042"
+class="quick-btn">
+
+Call Now
+
+</a>
+
+<a
+href="https://wa.me/918808312042"
+target="_blank"
+class="quick-btn dark">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-  © 2026 Advocate Maaz Ullah · All Rights Reserved
+
+<div class="footer-inner">
+
+<div class="footer-brand">
+
+Maaz Legal Associates
+
+<span>
+ADVOCATE · LUCKNOW
+</span>
+
+</div>
+
+
+<div class="footer-info">
+
+Lucknow, Uttar Pradesh<br>
+
+Allahabad High Court · Lucknow Bench<br>
+
+Lucknow District Courts
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Maaz Legal Associates · All Rights Reserved
+
+</div>
+
 </footer>
+
 
 </body>
 </html>
