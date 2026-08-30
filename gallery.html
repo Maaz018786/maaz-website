@@ -1,211 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | Advocate Maaz Ullah</title>
+  <title>Gallery | Maaz Legal Associates</title>
 
-<style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#0d1b2a;
-    color:white;
-}
-
-nav{
-    background:#ffffff;
-    padding:22px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    color:#0d1b2a;
-    font-family:Georgia, serif;
-    font-size:27px;
-    font-weight:bold;
-}
-
-.logo span{
-    display:block;
-    color:#b88932;
-    font-family:Arial,sans-serif;
-    font-size:12px;
-    letter-spacing:4px;
-    margin-top:7px;
-}
-
-.nav-links{
-    display:flex;
-    gap:35px;
-}
-
-.nav-links a{
-    color:#111;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.hero{
-    text-align:center;
-    padding:75px 20px 45px;
-}
-
-.hero h1{
-    font-family:Georgia,serif;
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#d8d8d8;
-    font-size:17px;
-}
-
-.line{
-    width:70px;
-    height:3px;
-    background:#c49a45;
-    margin:25px auto;
-}
-
-.gallery{
-    width:90%;
-    max-width:1200px;
-    margin:20px auto 80px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.photo{
-    background:#172536;
-    border:1px solid rgba(196,154,69,.5);
-    overflow:hidden;
-    min-height:280px;
-    position:relative;
-}
-
-.photo img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    display:block;
-}
-
-.photo-title{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    padding:18px;
-    background:linear-gradient(transparent,rgba(0,0,0,.9));
-    font-family:Georgia,serif;
-    font-size:19px;
-    font-weight:bold;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#08131f;
-    color:#aaa;
-}
-
-@media(max-width:800px){
-    .gallery{
-        grid-template-columns:1fr 1fr;
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .hero h1{
-        font-size:40px;
-    }
-}
-
-@media(max-width:550px){
-    nav{
-        padding:18px 5%;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f1e8;
+      color: #20252b;
     }
 
-    .nav-links{
-        gap:12px;
-        font-size:13px;
+    /* NAVBAR */
+    nav {
+      background: #0d1b2a;
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    .gallery{
-        grid-template-columns:1fr;
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: bold;
     }
-}
-</style>
+
+    .logo span {
+      display: block;
+      color: #c59b45;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      margin-top: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 28px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d2aa5b;
+    }
+
+    /* HEADER */
+    .hero {
+      background:
+        linear-gradient(rgba(13,27,42,0.94), rgba(13,27,42,0.94));
+      padding: 80px 7% 65px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero small {
+      color: #d2aa5b;
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: 58px;
+      margin: 18px 0 15px;
+    }
+
+    .hero p {
+      color: #dfe5ea;
+      font-size: 17px;
+    }
+
+    /* GALLERY */
+    .gallery-section {
+      max-width: 1250px;
+      margin: auto;
+      padding: 65px 25px 80px;
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .gallery-title h2 {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      color: #0d1b2a;
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: #c59b45;
+      margin: 15px auto;
+    }
+
+    .gallery-title p {
+      color: #666;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .photo {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .photo:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+      background: #ddd;
+    }
+
+    .photo-title {
+      padding: 16px 10px 12px;
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      color: #0d1b2a;
+      font-weight: bold;
+    }
+
+    /* SUPREME COURT */
+    .supreme {
+      grid-column: span 3;
+    }
+
+    .supreme img {
+      height: 430px;
+      object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+    footer p {
+      color: #cbd2d8;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      nav {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 12px;
+        font-size: 13px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .supreme {
+        grid-column: span 1;
+      }
+
+      .photo img,
+      .supreme img {
+        height: 350px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
+  <!-- NAVIGATION -->
+  <nav>
     <div class="logo">
-        Maaz Ullah
-        <span>ADVOCATE</span>
+      Maaz Legal Associates
+      <span>ADVOCATES</span>
     </div>
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </div>
-</nav>
+  </nav>
 
-<section class="hero">
-    <h1>Professional Gallery</h1>
-    <div class="line"></div>
-    <p>Advocate Maaz Ullah · Lucknow</p>
-</section>
 
-<div class="gallery">
+  <!-- PAGE HEADER -->
+  <section class="hero">
+    <small>MAAZ LEGAL ASSOCIATES · LUCKNOW</small>
 
-    <div class="photo">
-        <img src="./advocate%20(1).png" alt="Advocate Maaz Ullah">
-        <div class="photo-title">Advocate Maaz Ullah</div>
-    </div>
+    <h1>Our Gallery</h1>
 
-    <div class="photo">
-        <img src="advocate%20(2).jpg" alt="Advocate Maaz Ullah">
-        <div class="photo-title">Advocate Maaz Ullah</div>
-    </div>
+    <p>
+      Professional moments, legal practice and appearances.
+    </p>
+  </section>
 
-    <div class="photo">
-        <img src="advocate%20(4).png" alt="Advocate Maaz Ullah">
-        <div class="photo-title">Advocate Maaz Ullah</div>
-    </div>
 
-    <div class="photo">
-        <img src="advocate%20(8).jpg" alt="Advocate Maaz Ullah">
-        <div class="photo-title">Advocate Maaz Ullah</div>
+  <!-- GALLERY -->
+  <section class="gallery-section">
+
+    <div class="gallery-title">
+      <h2>Advocate Maaz Ullah</h2>
+      <div class="gold-line"></div>
+      <p>Legal practice and professional appearances</p>
     </div>
 
-    <div class="photo">
-        <img src="advocate%20(9).png" alt="Advocate Maaz Ullah">
-        <div class="photo-title">Advocate Maaz Ullah</div>
+
+    <div class="gallery">
+
+      <!-- PHOTO 1 -->
+      <div class="photo">
+        <img
+          src="./advocate%20(1).png"
+          alt="Advocate Maaz Ullah"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Advocate Maaz Ullah
+        </div>
+      </div>
+
+
+      <!-- PHOTO 2 -->
+      <div class="photo">
+        <img
+          src="./advocate%20(2).jpg"
+          alt="Advocate Maaz Ullah"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Advocate Maaz Ullah
+        </div>
+      </div>
+
+
+      <!-- PHOTO 3 -->
+      <div class="photo">
+        <img
+          src="./advocate%20(4).png"
+          alt="Advocate Maaz Ullah"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Advocate Maaz Ullah
+        </div>
+      </div>
+
+
+      <!-- PHOTO 4 -->
+      <div class="photo">
+        <img
+          src="./advocate%20(8).jpg"
+          alt="Advocate Maaz Ullah"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Advocate Maaz Ullah
+        </div>
+      </div>
+
+
+      <!-- PHOTO 5 -->
+      <div class="photo">
+        <img
+          src="./advocate%20(9).png"
+          alt="Advocate Maaz Ullah"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Advocate Maaz Ullah
+        </div>
+      </div>
+
+
+      <!-- SUPREME COURT PHOTO -->
+      <div class="photo supreme">
+        <img
+          src="./supreme%20court.webp"
+          alt="Supreme Court"
+          onerror="this.style.display='none'"
+        >
+        <div class="photo-title">
+          Supreme Court
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <div class="photo">
-        <img src="supreme%20court.webp" alt="Supreme Court">
-        <div class="photo-title">Supreme Court</div>
-    </div>
 
-</div>
-
-<footer>
-    © 2026 Advocate Maaz Ullah · All Rights Reserved
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <strong>Maaz Legal Associates</strong>
+    <p>Professional Legal Services · Lucknow</p>
+    <p>© 2026 Maaz Legal Associates. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
