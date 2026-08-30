@@ -4,14 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Advocate Maaz Ullah | Maaz Legal Associates</title>
-
-<meta name="description"
-content="About Advocate Maaz Ullah of Maaz Legal Associates. Professional legal representation and consultation.">
+<title>About | Maaz Legal Associates</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
@@ -31,106 +27,84 @@ html{
 
 body{
     font-family:"Inter",Arial,sans-serif;
-    background:#f7f5f0;
+    background:#f6f2e9;
     color:#172333;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 nav{
-    min-height:88px;
-    padding:15px 7%;
+    min-height:86px;
+    padding:16px 7%;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    background:#ffffff;
-    border-bottom:1px solid #ddd5c6;
+    background:#0d1824;
+    border-bottom:1px solid #b9954c;
 
     position:relative;
-    z-index:10;
+    z-index:20;
 }
 
 .logo{
+    color:white;
     text-decoration:none;
 }
 
 .logo-name{
     display:block;
-
     font-family:"DM Serif Display",Georgia,serif;
-
     font-size:25px;
     line-height:1;
-
-    color:#172333;
 }
 
 .logo-title{
     display:block;
-
-    margin-top:8px;
-
-    color:#b48a3c;
-
+    margin-top:7px;
+    color:#d1aa5d;
     font-size:9px;
     font-weight:700;
     letter-spacing:3px;
 }
 
 .nav-links{
-    list-style:none;
-
     display:flex;
-    align-items:center;
-
+    list-style:none;
     gap:30px;
 }
 
 .nav-links a{
+    color:#fff;
     text-decoration:none;
-
-    color:#172333;
-
     font-size:14px;
     font-weight:600;
-
     transition:.3s;
 }
 
-.nav-links a:hover{
-    color:#b48a3c;
-}
-
+.nav-links a:hover,
 .nav-links .active{
-    color:#b48a3c;
+    color:#d1aa5d;
 }
 
-/* =========================
-   PAGE HERO
-========================= */
+/* HERO */
 
-.page-hero{
-    min-height:390px;
+.hero{
+    min-height:430px;
+    padding:70px 7%;
 
     display:flex;
     align-items:center;
 
-    padding:65px 7%;
-
-    position:relative;
-
-    color:#ffffff;
+    color:white;
 
     background:
     linear-gradient(
         90deg,
-        rgba(5,14,24,.97),
-        rgba(5,14,24,.82),
-        rgba(5,14,24,.42)
+        rgba(7,17,28,.96),
+        rgba(7,17,28,.83),
+        rgba(7,17,28,.60)
     ),
     url("supreme%20court.webp");
 
@@ -138,66 +112,50 @@ nav{
     background-position:center;
 }
 
-.page-hero-content{
+.hero-content{
     max-width:800px;
 }
 
-.kicker{
-    color:#d3a854;
-
+.hero-small{
+    color:#d1aa5d;
     font-size:12px;
     font-weight:700;
-
     letter-spacing:4px;
-
-    margin-bottom:16px;
-}
-
-.page-hero h1{
-    font-family:"DM Serif Display",Georgia,serif;
-
-    font-size:clamp(48px,6vw,70px);
-
-    font-weight:400;
-
-    line-height:1.05;
-
     margin-bottom:18px;
 }
 
-.page-hero h1 span{
-    color:#d3a854;
+.hero h1{
+    font-family:"DM Serif Display",Georgia,serif;
+    font-size:clamp(48px,6vw,72px);
+    font-weight:400;
+    line-height:1.05;
+    margin-bottom:18px;
 }
 
-.page-hero p{
-    max-width:650px;
+.hero h1 span{
+    color:#d1aa5d;
+}
 
+.hero p{
+    max-width:680px;
     color:#e0e5e9;
-
     font-size:17px;
-
-    line-height:1.75;
+    line-height:1.8;
 }
 
-/* =========================
-   PROFILE
-========================= */
+/* ABOUT PROFILE */
 
-.profile{
+.about{
     padding:90px 7%;
-
-    background:#f7f5f0;
+    background:#f6f2e9;
 }
 
-.profile-inner{
+.about-inner{
     max-width:1150px;
-
     margin:auto;
 
     display:grid;
-
     grid-template-columns:390px 1fr;
-
     gap:70px;
 
     align-items:center;
@@ -206,112 +164,73 @@ nav{
 /* PHOTO */
 
 .profile-photo{
-    position:relative;
-
     padding:10px;
-
-    background:#ffffff;
-
-    border:1px solid #c9a65c;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.10);
+    background:white;
+    border:1px solid #c29a4b;
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
 }
 
 .profile-photo img{
     width:100%;
-
-    height:480px;
-
+    height:500px;
     display:block;
 
     object-fit:cover;
-
     object-position:center top;
 }
 
-.photo-caption{
-    position:absolute;
-
-    left:25px;
-    right:25px;
-    bottom:25px;
-
-    padding:15px;
-
-    background:rgba(10,20,31,.93);
-
-    color:#ffffff;
-
+.photo-name{
+    background:#101b27;
+    color:white;
     text-align:center;
+    padding:17px 10px;
 }
 
-.photo-caption strong{
+.photo-name strong{
     display:block;
-
     font-family:"DM Serif Display",Georgia,serif;
-
-    font-size:22px;
-
+    font-size:21px;
     font-weight:400;
 }
 
-.photo-caption span{
+.photo-name span{
     display:block;
-
-    margin-top:4px;
-
-    color:#d3a854;
-
-    font-size:10px;
-
+    margin-top:5px;
+    color:#d1aa5d;
+    font-size:9px;
     font-weight:700;
-
     letter-spacing:3px;
 }
 
-/* PROFILE TEXT */
+/* ABOUT TEXT */
 
-.profile-content .small-title{
+.about-text .small{
     color:#b48a3c;
-
     font-size:12px;
     font-weight:700;
-
     letter-spacing:4px;
-
-    margin-bottom:8px;
+    margin-bottom:9px;
 }
 
-.profile-content h2{
+.about-text h2{
     font-family:"DM Serif Display",Georgia,serif;
-
     font-size:52px;
-
     font-weight:400;
-
     line-height:1.1;
-
-    color:#172333;
-
     margin-bottom:13px;
 }
 
-.gold-line{
-    width:55px;
+.line{
+    width:60px;
     height:3px;
-
     background:#c29a4b;
-
     margin-bottom:25px;
 }
 
-.profile-content p{
-    color:#5c646c;
-
+.about-text p{
+    color:#606870;
     font-size:16px;
-
     line-height:1.85;
-
     margin-bottom:18px;
 }
 
@@ -319,401 +238,240 @@ nav{
 
 .highlights{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:15px;
-
     margin-top:28px;
 }
 
 .highlight{
-    padding:21px;
-
-    background:#ffffff;
-
+    padding:22px;
+    background:white;
     border-left:3px solid #c29a4b;
-
     box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
 .highlight i{
     color:#b48a3c;
-
-    font-size:22px;
-
-    margin-bottom:11px;
+    font-size:23px;
+    margin-bottom:12px;
 }
 
 .highlight h3{
     font-size:14px;
-
-    margin-bottom:5px;
-
-    color:#172333;
+    margin-bottom:7px;
 }
 
 .highlight p{
     margin:0;
-
     font-size:12px;
-
     line-height:1.6;
 }
 
-/* =========================
-   PROFESSIONAL APPROACH
-========================= */
+/* APPROACH */
 
 .approach{
     padding:85px 7%;
-
-    background:#ffffff;
+    background:white;
 }
 
-.approach-inner{
+.container{
     max-width:1150px;
-
     margin:auto;
 }
 
-.section-heading{
-    text-align:center;
-
-    max-width:750px;
-
+.heading{
+    max-width:760px;
     margin:0 auto 50px;
+    text-align:center;
 }
 
-.section-heading .kicker{
-    margin-bottom:10px;
+.heading .small{
+    color:#b48a3c;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
 }
 
-.section-heading h2{
+.heading h2{
     font-family:"DM Serif Display",Georgia,serif;
-
     font-size:45px;
-
     font-weight:400;
-
-    color:#172333;
-
-    margin-bottom:13px;
+    margin:12px 0;
 }
 
-.section-heading p{
-    color:#697078;
-
+.heading p{
+    color:#687078;
     line-height:1.7;
 }
 
-.approach-grid{
+.cards{
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:22px;
 }
 
-.approach-card{
+.card{
     padding:34px 28px;
-
-    background:#f7f5f0;
-
+    background:#f6f2e9;
     border-top:3px solid #c29a4b;
-
     transition:.3s;
 }
 
-.approach-card:hover{
+.card:hover{
     transform:translateY(-6px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.09);
 }
 
-.approach-card i{
+.card i{
     color:#b48a3c;
-
     font-size:27px;
-
     margin-bottom:18px;
 }
 
-.approach-card h3{
+.card h3{
     font-family:"DM Serif Display",Georgia,serif;
-
     font-size:25px;
-
     font-weight:400;
-
-    color:#172333;
-
     margin-bottom:10px;
 }
 
-.approach-card p{
+.card p{
     color:#666e75;
-
     font-size:14px;
-
     line-height:1.75;
 }
 
-/* =========================
-   COURTS
-========================= */
+/* COURTS */
 
 .courts{
     padding:85px 7%;
-
-    background:#172333;
-
-    color:#ffffff;
+    background:#101b27;
+    color:white;
 }
 
-.courts-inner{
-    max-width:1150px;
-
-    margin:auto;
+.courts .heading h2{
+    color:white;
 }
 
-.courts .section-heading h2{
-    color:#ffffff;
-}
-
-.courts .section-heading p{
-    color:#c8d0d7;
+.courts .heading p{
+    color:#cbd2d8;
 }
 
 .court-grid{
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:20px;
 }
 
 .court{
     padding:28px;
-
-    border:1px solid rgba(211,168,84,.35);
-
+    border:1px solid rgba(210,170,93,.35);
     background:rgba(255,255,255,.035);
-
-    transition:.3s;
-}
-
-.court:hover{
-    border-color:#d3a854;
-
-    transform:translateY(-5px);
 }
 
 .court i{
-    color:#d3a854;
-
+    color:#d1aa5d;
     font-size:25px;
-
     margin-bottom:15px;
 }
 
 .court h3{
     font-family:"DM Serif Display",Georgia,serif;
-
-    font-size:25px;
-
+    font-size:24px;
     font-weight:400;
-
     margin-bottom:8px;
 }
 
 .court p{
-    color:#c8d0d7;
-
+    color:#c7d0d7;
     font-size:13px;
-
     line-height:1.7;
 }
 
-/* =========================
-   PRACTICE AREAS
-========================= */
-
-.practice{
-    padding:85px 7%;
-
-    background:#f7f5f0;
-}
-
-.practice-inner{
-    max-width:1150px;
-
-    margin:auto;
-}
-
-.practice-grid{
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:15px;
-}
-
-.practice-item{
-    background:#ffffff;
-
-    border:1px solid #ddd3c0;
-
-    padding:25px;
-
-    text-align:center;
-
-    transition:.3s;
-}
-
-.practice-item:hover{
-    border-color:#c29a4b;
-
-    transform:translateY(-5px);
-}
-
-.practice-item i{
-    color:#b48a3c;
-
-    font-size:27px;
-
-    margin-bottom:13px;
-}
-
-.practice-item h3{
-    font-family:"DM Serif Display",Georgia,serif;
-
-    font-size:22px;
-
-    font-weight:400;
-}
-
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta{
     padding:75px 7%;
-
     text-align:center;
 
     background:
-    linear-gradient(
-        rgba(5,14,24,.94),
-        rgba(5,14,24,.94)
-    ),
+    linear-gradient(rgba(7,17,28,.95),rgba(7,17,28,.95)),
     url("supreme%20court.webp");
 
     background-size:cover;
     background-position:center;
 
-    color:#ffffff;
+    color:white;
 }
 
-.cta .kicker{
-    margin-bottom:10px;
+.cta .small{
+    color:#d1aa5d;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
 }
 
 .cta h2{
     font-family:"DM Serif Display",Georgia,serif;
-
     font-size:46px;
-
     font-weight:400;
-
-    margin-bottom:12px;
+    margin:12px 0;
 }
 
 .cta p{
-    color:#d0d7dd;
-
-    margin-bottom:28px;
+    color:#d1d8de;
+    margin-bottom:27px;
 }
 
 .btn{
     display:inline-flex;
-
     align-items:center;
-
     gap:9px;
 
     padding:14px 24px;
-
     margin:4px;
 
     text-decoration:none;
-
     font-size:14px;
-
     font-weight:700;
-
-    transition:.3s;
 }
 
 .btn-gold{
     background:#c29a4b;
-
-    color:#ffffff;
-}
-
-.btn-gold:hover{
-    background:#d6b269;
+    color:white;
 }
 
 .btn-outline{
-    color:#ffffff;
-
-    border:1px solid #d3a854;
+    border:1px solid #d1aa5d;
+    color:white;
 }
 
-.btn-outline:hover{
-    background:#ffffff;
-
-    color:#172333;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-    background:#08131f;
-
-    color:#8f9aa4;
-
-    padding:30px 7%;
-
+    background:#07111c;
+    color:#8d98a2;
     text-align:center;
-
+    padding:30px 20px;
     font-size:13px;
 }
 
 footer strong{
-    color:#d3a854;
+    color:#d1aa5d;
 }
 
-/* =========================
-   FLOATING BUTTONS
-========================= */
+/* FLOATING BUTTONS */
 
-.floating-contact{
+.floating{
     position:fixed;
-
     right:22px;
     bottom:22px;
 
     display:flex;
-
     flex-direction:column;
-
     gap:11px;
 
-    z-index:9999;
+    z-index:999;
 }
 
 .float-btn{
@@ -723,128 +481,75 @@ footer strong{
     border-radius:50%;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
+    color:white;
     text-decoration:none;
-
-    color:#ffffff;
 
     font-size:22px;
 
-    box-shadow:0 7px 22px rgba(0,0,0,.30);
-
-    transition:.3s;
-
-    position:relative;
-}
-
-.float-btn:hover{
-    transform:scale(1.1);
+    box-shadow:0 7px 22px rgba(0,0,0,.3);
 }
 
 .whatsapp{
-    background:#25D366;
+    background:#25d366;
 }
 
 .call{
     background:#b48a3c;
 }
 
-.float-label{
-    position:absolute;
-
-    right:67px;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    background:#172333;
-
-    color:#ffffff;
-
-    padding:7px 11px;
-
-    border-radius:4px;
-
-    white-space:nowrap;
-
-    font-size:11px;
-
-    opacity:0;
-
-    transition:.25s;
-}
-
-.float-btn:hover .float-label{
-    opacity:1;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:900px){
 
     nav{
         flex-direction:column;
-
         gap:17px;
-
-        padding:18px 5%;
     }
 
     .nav-links{
-        gap:17px;
-
+        gap:18px;
         flex-wrap:wrap;
-
         justify-content:center;
     }
 
-    .profile-inner{
+    .about-inner{
         grid-template-columns:1fr;
-
         max-width:700px;
     }
 
     .profile-photo{
         max-width:390px;
-
         width:100%;
-
         margin:auto;
     }
 
-    .approach-grid,
+    .cards,
     .court-grid{
         grid-template-columns:1fr;
     }
-
 }
 
-@media(max-width:650px){
+@media(max-width:600px){
 
-    .page-hero{
-        min-height:350px;
-
+    .hero{
+        min-height:360px;
         padding:55px 6%;
     }
 
-    .page-hero h1{
-        font-size:44px;
+    .hero h1{
+        font-size:45px;
     }
 
-    .profile,
+    .about,
     .approach,
-    .courts,
-    .practice{
+    .courts{
         padding:65px 6%;
     }
 
-    .profile-content h2{
+    .about-text h2{
         font-size:40px;
     }
 
@@ -852,11 +557,7 @@ footer strong{
         grid-template-columns:1fr;
     }
 
-    .practice-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-heading h2{
+    .heading h2{
         font-size:37px;
     }
 
@@ -865,17 +566,12 @@ footer strong{
     }
 
     .cta h2{
-        font-size:37px;
+        font-size:38px;
     }
 
-    .floating-contact{
+    .floating{
         right:15px;
         bottom:15px;
-    }
-
-    .float-btn{
-        width:52px;
-        height:52px;
     }
 
 }
@@ -885,10 +581,7 @@ footer strong{
 
 <body>
 
-
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -904,37 +597,26 @@ footer strong{
 
     </a>
 
-
     <ul class="nav-links">
 
         <li>
-            <a href="index.html">
-                Home
-            </a>
+            <a href="index.html">Home</a>
         </li>
 
         <li>
-            <a href="about.html" class="active">
-                About
-            </a>
+            <a href="about.html" class="active">About</a>
         </li>
 
         <li>
-            <a href="services.html">
-                Services
-            </a>
+            <a href="services.html">Services</a>
         </li>
 
         <li>
-            <a href="gallery.html">
-                Gallery
-            </a>
+            <a href="gallery.html">Gallery</a>
         </li>
 
         <li>
-            <a href="contact.html">
-                Contact
-            </a>
+            <a href="contact.html">Contact</a>
         </li>
 
     </ul>
@@ -942,15 +624,13 @@ footer strong{
 </nav>
 
 
-<!-- =========================
-     ABOUT HERO
-========================= -->
+<!-- HERO -->
 
-<section class="page-hero">
+<section class="hero">
 
-    <div class="page-hero-content">
+    <div class="hero-content">
 
-        <div class="kicker">
+        <div class="hero-small">
             MAAZ LEGAL ASSOCIATES
         </div>
 
@@ -970,23 +650,22 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     ADVOCATE PROFILE
-========================= -->
+<!-- ABOUT -->
 
-<section class="profile">
+<section class="about">
 
-    <div class="profile-inner">
-
+    <div class="about-inner">
 
         <div class="profile-photo">
 
+            <!-- ACTUAL FILE NAME: advocate  (1).png -->
+
             <img
-                src="advocate%20(1).png"
+                src="advocate%20%20%281%29.png"
                 alt="Advocate Maaz Ullah"
             >
 
-            <div class="photo-caption">
+            <div class="photo-name">
 
                 <strong>
                     Advocate Maaz Ullah
@@ -1001,9 +680,9 @@ footer strong{
         </div>
 
 
-        <div class="profile-content">
+        <div class="about-text">
 
-            <div class="small-title">
+            <div class="small">
                 ADVOCATE
             </div>
 
@@ -1011,27 +690,23 @@ footer strong{
                 Maaz Ullah
             </h2>
 
-            <div class="gold-line"></div>
-
+            <div class="line"></div>
 
             <p>
                 Advocate Maaz Ullah is a legal professional
                 providing legal consultation and representation
-                in accordance with the requirements of each
-                legal matter.
+                according to the requirements of each legal matter.
             </p>
 
-
             <p>
-                The approach is centred on understanding the
-                matter carefully, providing clear legal guidance
-                and maintaining professional communication
-                throughout the legal process.
+                The approach is centred on understanding the matter
+                carefully, providing clear legal guidance and
+                maintaining professional communication throughout
+                the legal process.
             </p>
 
 
             <div class="highlights">
-
 
                 <div class="highlight">
 
@@ -1064,7 +739,6 @@ footer strong{
 
                 </div>
 
-
             </div>
 
         </div>
@@ -1074,18 +748,15 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     APPROACH
-========================= -->
+<!-- APPROACH -->
 
 <section class="approach">
 
-    <div class="approach-inner">
+    <div class="container">
 
+        <div class="heading">
 
-        <div class="section-heading">
-
-            <div class="kicker">
+            <div class="small">
                 OUR APPROACH
             </div>
 
@@ -1101,10 +772,9 @@ footer strong{
         </div>
 
 
-        <div class="approach-grid">
+        <div class="cards">
 
-
-            <div class="approach-card">
+            <div class="card">
 
                 <i class="fa-solid fa-magnifying-glass"></i>
 
@@ -1120,7 +790,7 @@ footer strong{
             </div>
 
 
-            <div class="approach-card">
+            <div class="card">
 
                 <i class="fa-solid fa-file-shield"></i>
 
@@ -1136,7 +806,7 @@ footer strong{
             </div>
 
 
-            <div class="approach-card">
+            <div class="card">
 
                 <i class="fa-solid fa-comments"></i>
 
@@ -1151,7 +821,6 @@ footer strong{
 
             </div>
 
-
         </div>
 
     </div>
@@ -1159,18 +828,15 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     COURTS
-========================= -->
+<!-- COURTS -->
 
 <section class="courts">
 
-    <div class="courts-inner">
+    <div class="container">
 
+        <div class="heading">
 
-        <div class="section-heading">
-
-            <div class="kicker">
+            <div class="small">
                 LEGAL PRACTICE
             </div>
 
@@ -1187,7 +853,6 @@ footer strong{
 
 
         <div class="court-grid">
-
 
             <div class="court">
 
@@ -1236,7 +901,6 @@ footer strong{
 
             </div>
 
-
         </div>
 
     </div>
@@ -1244,116 +908,11 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     PRACTICE AREAS
-========================= -->
-
-<section class="practice">
-
-    <div class="practice-inner">
-
-
-        <div class="section-heading">
-
-            <div class="kicker">
-                AREAS OF PRACTICE
-            </div>
-
-            <h2>
-                Legal Matters
-            </h2>
-
-            <p>
-                Professional assistance across different
-                categories of legal matters.
-            </p>
-
-        </div>
-
-
-        <div class="practice-grid">
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-gavel"></i>
-
-                <h3>
-                    Criminal Matters
-                </h3>
-
-            </div>
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-scale-balanced"></i>
-
-                <h3>
-                    Civil Matters
-                </h3>
-
-            </div>
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-people-roof"></i>
-
-                <h3>
-                    Family & Matrimonial
-                </h3>
-
-            </div>
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-house"></i>
-
-                <h3>
-                    Property Matters
-                </h3>
-
-            </div>
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <h3>
-                    Consumer Matters
-                </h3>
-
-            </div>
-
-
-            <div class="practice-item">
-
-                <i class="fa-solid fa-comments"></i>
-
-                <h3>
-                    Legal Consultation
-                </h3>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CONTACT CTA
-========================= -->
+<!-- CTA -->
 
 <section class="cta">
 
-    <div class="kicker">
+    <div class="small">
         MAAZ LEGAL ASSOCIATES
     </div>
 
@@ -1366,37 +925,27 @@ footer strong{
         legal consultation.
     </p>
 
-
     <a
         href="tel:+918808312042"
         class="btn btn-gold"
     >
-
         <i class="fa-solid fa-phone"></i>
-
         Call Now
-
     </a>
-
 
     <a
         href="https://wa.me/918808312042"
         target="_blank"
         class="btn btn-outline"
     >
-
         <i class="fa-brands fa-whatsapp"></i>
-
         WhatsApp
-
     </a>
 
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1407,12 +956,9 @@ footer strong{
 </footer>
 
 
-<!-- =========================
-     FLOATING BUTTONS
-========================= -->
+<!-- FLOATING BUTTONS -->
 
-<div class="floating-contact">
-
+<div class="floating">
 
     <a
         href="https://wa.me/918808312042"
@@ -1420,33 +966,18 @@ footer strong{
         class="float-btn whatsapp"
         aria-label="WhatsApp"
     >
-
         <i class="fa-brands fa-whatsapp"></i>
-
-        <span class="float-label">
-            WhatsApp
-        </span>
-
     </a>
-
 
     <a
         href="tel:+918808312042"
         class="float-btn call"
         aria-label="Call"
     >
-
         <i class="fa-solid fa-phone"></i>
-
-        <span class="float-label">
-            Call
-        </span>
-
     </a>
 
-
 </div>
-
 
 </body>
 </html>
