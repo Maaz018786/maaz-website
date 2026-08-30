@@ -7,242 +7,197 @@
 <title>Gallery | Maaz Legal Associates</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #f7f3e8;
-    color: #17202b;
-    line-height: 1.6;
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f1e8;
+    color:#202735;
 }
 
 /* NAVBAR */
-nav {
-    background: #0c1724;
-    border-bottom: 2px solid #b99545;
-    padding: 18px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav{
+    background:#0c1725;
+    color:white;
+    height:88px;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:2px solid #b9954d;
 }
 
-.logo {
-    color: #ffffff;
-    font-size: 21px;
-    font-weight: bold;
-    letter-spacing: .3px;
+.logo{
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:.3px;
 }
 
-.logo small {
-    display: block;
-    color: #c5a059;
-    font-size: 9px;
-    letter-spacing: 3px;
-    margin-top: 3px;
+.logo span{
+    display:block;
+    margin-top:7px;
+    font-family:Arial,sans-serif;
+    font-size:9px;
+    letter-spacing:3px;
+    color:#c6a15a;
 }
 
-nav .links {
-    display: flex;
-    gap: 28px;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
 }
 
-nav a:hover {
-    color: #c5a059;
+nav a:hover{
+    color:#c6a15a;
 }
 
 /* HEADER */
-.hero {
-    background: #111b29;
-    color: white;
-    text-align: center;
-    padding: 65px 20px 60px;
+.hero{
+    text-align:center;
+    padding:70px 20px 40px;
+    background:
+        linear-gradient(rgba(12,23,37,.92),rgba(12,23,37,.92)),
+        url("./supreme%20court.webp");
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
-.hero .label {
-    color: #c5a059;
-    letter-spacing: 4px;
-    font-size: 11px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.small-title{
+    color:#c6a15a;
+    font-size:11px;
+    letter-spacing:4px;
+    font-weight:bold;
+    margin-bottom:18px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:42px;
+    margin-bottom:18px;
 }
 
-.hero p {
-    color: #d9dce0;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
+.hero p{
+    color:#ddd;
+    font-size:15px;
 }
 
 /* GALLERY */
-.gallery-section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 65px 20px 90px;
+.gallery-section{
+    max-width:1200px;
+    margin:auto;
+    padding:55px 20px 80px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
-.photo {
-    background: #ffffff;
-    border: 1px solid #ddd5c5;
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
-    overflow: hidden;
-    transition: .3s ease;
+.photo{
+    background:white;
+    border:1px solid #ddd6c8;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+    transition:.3s ease;
 }
 
-.photo:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.14);
+.photo:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.14);
 }
 
-.photo img {
-    width: 100%;
-    height: 360px;
-    display: block;
-    object-fit: cover;
+.photo img{
+    width:100%;
+    height:330px;
+    display:block;
+    object-fit:cover;
 }
 
-.photo-info {
-    text-align: center;
-    padding: 17px 10px 20px;
+.photo-title{
+    padding:17px 10px 6px;
+    text-align:center;
+    font-family:Georgia,serif;
+    font-size:17px;
+    font-weight:bold;
 }
 
-.photo-info h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.photo-info span {
-    color: #b18a3d;
-    font-family: Arial, sans-serif;
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: 3px;
+.photo-subtitle{
+    padding:0 10px 18px;
+    text-align:center;
+    color:#b18c45;
+    font-size:9px;
+    letter-spacing:3px;
+    font-weight:bold;
 }
 
 /* SUPREME COURT FEATURE */
-.feature {
-    grid-column: 1 / -1;
-    margin-top: 8px;
+.feature{
+    grid-column:1 / -1;
 }
 
-.feature img {
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-}
-
-/* FOOTER */
-footer {
-    background: #0c1724;
-    color: #d9d9d9;
-    text-align: center;
-    padding: 28px 15px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-}
-
-footer strong {
-    color: #c5a059;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 85px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #25D366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    box-shadow: 0 5px 18px rgba(0,0,0,.25);
-}
-
-/* CALL */
-.call {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #b99545;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 22px;
-    box-shadow: 0 5px 18px rgba(0,0,0,.25);
+.feature img{
+    height:520px;
+    object-fit:cover;
 }
 
 /* MOBILE */
-@media (max-width: 800px) {
+@media(max-width:800px){
 
-    nav {
-        padding: 15px 20px;
+    nav{
+        height:auto;
+        padding:18px 6%;
+        align-items:center;
     }
 
-    nav .links {
-        gap: 14px;
+    nav ul{
+        gap:15px;
     }
 
-    nav a {
-        font-size: 12px;
+    nav a{
+        font-size:12px;
     }
 
-    .hero {
-        padding: 50px 20px;
+    .logo{
+        font-size:17px;
     }
 
-    .hero h1 {
-        font-size: 32px;
+    .hero{
+        padding:55px 15px 35px;
     }
 
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 22px;
+    .hero h1{
+        font-size:32px;
     }
 
-    .photo img {
-        height: auto;
-        max-height: 500px;
+    .gallery{
+        grid-template-columns:1fr;
     }
 
-    .feature {
-        grid-column: auto;
+    .feature{
+        grid-column:auto;
     }
 
-    .feature img {
-        height: auto;
+    .photo img{
+        height:350px;
+    }
+
+    .feature img{
+        height:400px;
     }
 }
 </style>
@@ -251,158 +206,75 @@ footer strong {
 <body>
 
 <nav>
-
     <div class="logo">
         Maaz Legal Associates
-        <small>LEGAL ASSOCIATES</small>
+        <span>LEGAL ASSOCIATES</span>
     </div>
 
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
 </nav>
 
-
 <section class="hero">
-
-    <div class="label">PROFESSIONAL MOMENTS</div>
-
+    <div class="small-title">PROFESSIONAL MOMENTS</div>
     <h1>Advocate Maaz Ullah</h1>
-
-    <p>
-        Explore the professional gallery of Maaz Legal Associates.
-    </p>
-
+    <p>Explore the professional gallery of Maaz Legal Associates.</p>
 </section>
-
 
 <section class="gallery-section">
 
 <div class="gallery">
 
-
     <!-- PHOTO 1 -->
     <div class="photo">
-
-        <img
-        src="advocate%20%281%29.png"
-        alt="Advocate Maaz Ullah">
-
-        <div class="photo-info">
-            <h3>Advocate Maaz Ullah</h3>
-            <span>MAAZ LEGAL ASSOCIATES</span>
-        </div>
-
+        <img src="./advocate%20(1).png" alt="Advocate Maaz Ullah">
+        <div class="photo-title">Advocate Maaz Ullah</div>
+        <div class="photo-subtitle">MAAZ LEGAL ASSOCIATES</div>
     </div>
-
 
     <!-- PHOTO 2 -->
     <div class="photo">
-
-        <img
-        src="advocate%20%282%29.jpg"
-        alt="Advocate Maaz Ullah">
-
-        <div class="photo-info">
-            <h3>Advocate Maaz Ullah</h3>
-            <span>PROFESSIONAL APPEARANCE</span>
-        </div>
-
+        <img src="./advocate%20(2).jpg" alt="Advocate Maaz Ullah">
+        <div class="photo-title">Advocate Maaz Ullah</div>
+        <div class="photo-subtitle">PROFESSIONAL APPEARANCE</div>
     </div>
-
 
     <!-- PHOTO 3 -->
     <div class="photo">
-
-        <img
-        src="advocate%20%284%29.png"
-        alt="Advocate Maaz Ullah">
-
-        <div class="photo-info">
-            <h3>Advocate Maaz Ullah</h3>
-            <span>PROFESSIONAL APPEARANCE</span>
-        </div>
-
+        <img src="./advocate%20(4).png" alt="Advocate Maaz Ullah">
+        <div class="photo-title">Advocate Maaz Ullah</div>
+        <div class="photo-subtitle">PROFESSIONAL APPEARANCE</div>
     </div>
-
 
     <!-- PHOTO 4 -->
     <div class="photo">
-
-        <img
-        src="advocate%20%288%29.jpg"
-        alt="Advocate Maaz Ullah">
-
-        <div class="photo-info">
-            <h3>Advocate Maaz Ullah</h3>
-            <span>LEGAL PRACTICE</span>
-        </div>
-
+        <img src="./advocate%20(8).jpg" alt="Advocate Maaz Ullah">
+        <div class="photo-title">Advocate Maaz Ullah</div>
+        <div class="photo-subtitle">LEGAL PRACTICE</div>
     </div>
-
 
     <!-- PHOTO 5 -->
     <div class="photo">
-
-        <img
-        src="advocate%20%289%29.png"
-        alt="Advocate Maaz Ullah">
-
-        <div class="photo-info">
-            <h3>Advocate Maaz Ullah</h3>
-            <span>MAAZ LEGAL ASSOCIATES</span>
-        </div>
-
+        <img src="./advocate%20(9).png" alt="Advocate Maaz Ullah">
+        <div class="photo-title">Advocate Maaz Ullah</div>
+        <div class="photo-subtitle">MAAZ LEGAL ASSOCIATES</div>
     </div>
-
 
     <!-- SUPREME COURT PHOTO -->
     <div class="photo feature">
-
-        <img
-        src="supreme%20court.webp"
-        alt="Advocate Maaz Ullah at Supreme Court">
-
-        <div class="photo-info">
-
-            <h3>Supreme Court</h3>
-
-            <span>INDIAN JUDICIARY</span>
-
-        </div>
-
+        <img src="./supreme%20court.webp" alt="Supreme Court">
+        <div class="photo-title">Supreme Court</div>
+        <div class="photo-subtitle">INDIAN JUDICIARY</div>
     </div>
-
 
 </div>
 
 </section>
-
-
-<footer>
-    © 2026 <strong>Maaz Legal Associates</strong>. All Rights Reserved.
-</footer>
-
-
-<a
-href="https://wa.me/"
-class="whatsapp"
-aria-label="WhatsApp">
-☏
-</a>
-
-
-<a
-href="tel:"
-class="call"
-aria-label="Call">
-☎
-</a>
 
 </body>
 </html>
